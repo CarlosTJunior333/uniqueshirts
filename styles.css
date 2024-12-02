@@ -1,0 +1,152 @@
+/* Body background with dynamic gradient */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff007f, #ff69b4, #ff85c2); /* Vibrant gradient */
+    color: #000; /* Black text */
+    overflow-x: hidden;
+  }
+  
+  /* Header with modern styling */
+  header {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(135deg, #ff007f, #ff69b4); /* Rich hot pink */
+    color: #000000; /* Black text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    opacity: 0.8;
+  }
+  
+  /* Products section with polished card layout */
+  .products {
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  
+  .products h2 {
+    font-size: 2.5rem;
+    color: #000; /* Black heading for contrast */
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .product-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .category {
+    background-color: #fff; /* Clean white card */
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Modern shadow */
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .category:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .category img {
+    width: 100%;
+    max-width: 180px; /* Keep images moderately sized */
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .category p {
+    font-size: 1rem;
+    color: #333; /* Darker text for readability */
+    font-weight: 400;
+  }
+  
+  /* Footer with elegant gradient and form */
+  footer {
+    background: linear-gradient(135deg, #ff007f, #ff69b4); /* Gradient matches theme */
+    color: #000000; /* Black text */
+    padding: 2.5rem 1rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  footer form input {
+    padding: 0.8rem;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #fff; /* Subtle border */
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #000; /* Black input text */
+    background-color: #fff; /* White input background */
+  }
+  
+  footer form button {
+    background-color: #000; /* Black button */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  footer form button:hover {
+    background-color: #ff69b4; /* Hot pink hover */
+    transform: translateY(-3px);
+  }
+  
+  footer p {
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    .product-categories {
+      grid-template-columns: 1fr;
+    }
+  
+    footer form input {
+      width: 100%;
+    }
+  }
+  
